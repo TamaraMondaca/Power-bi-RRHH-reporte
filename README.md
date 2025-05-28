@@ -74,7 +74,7 @@ Se añadieron dos columnas clave:
 
 Estas nuevas columnas fueron fundamentales para construir los indicadores del análisis.
 
-![Preprocesamiento](.Captura/analisis%20depto.png)
+![Preprocesamiento](./Capturas/analisis%20depto.png)
 
 ---
 
