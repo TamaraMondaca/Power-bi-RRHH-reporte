@@ -55,7 +55,7 @@ Los datos utilizados provienen de un archivo Excel con los siguientes campos:
 - Nivel de satisfacción
 - Horas de ausencia
 
-![Vista general de los datos](ruta/de/tu/imagen1.png)
+![Vista general de los datos](./Capturas/analisis%20depto.png)
 
 ---
 
@@ -74,7 +74,7 @@ Se añadieron dos columnas clave:
 
 Estas nuevas columnas fueron fundamentales para construir los indicadores del análisis.
 
-![Preprocesamiento](./Capturas/analisis%20depto.png)
+![Preprocesamiento](./Capturas/Dashboard%20RRHH.png)
 
 ---
 
