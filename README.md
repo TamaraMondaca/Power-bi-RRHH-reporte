@@ -55,7 +55,8 @@ Los datos utilizados provienen de un archivo Excel con los siguientes campos:
 - Nivel de satisfacción
 - Horas de ausencia
 
-![Vista general de los datos](./Capturas/analisis%20depto.png)
+![Vista general de los datos](./Capturas/1.Dashboard%20RRHH.png)
+
 
 ---
 
@@ -74,7 +75,7 @@ Se añadieron dos columnas clave:
 
 Estas nuevas columnas fueron fundamentales para construir los indicadores del análisis.
 
-![Preprocesamiento](./Capturas/Dashboard%20RRHH.png)
+(./Capturas/Dashboard%20RRHH.png)
 
 ---
 
@@ -90,3 +91,5 @@ total mujeres = CALCULATE([Total colaboradores], colaboradores[Género] = "femen
 total varones = CALCULATE([Total colaboradores], colaboradores[Género] = "Masculino")
 %mujeres = DIVIDE([total mujeres], [Total colaboradores], 0)
 %varones = DIVIDE([total varones], [Total colaboradores], 0)
+
+(.)
