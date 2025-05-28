@@ -75,13 +75,15 @@ Se añadieron dos columnas clave:
 
 Estas nuevas columnas fueron fundamentales para construir los indicadores del análisis.
 
-(./Capturas/Dashboard%20RRHH.png)
+![Vista general de los datos](./Capturas/2.transformacion.png)
 
 ---
 
 ## 🧮 Cálculo de Indicadores con DAX
 
-Se calcularon diversas medidas para obtener los indicadores requeridos.
+Se calcularon diversas medidas para obtener los indicadores requeridos
+
+![Vista general de los datos](./Capturas/3.medidas.png)
 
 ### Total de colaboradores por género (cantidad y porcentaje):
 
@@ -91,5 +93,39 @@ total mujeres = CALCULATE([Total colaboradores], colaboradores[Género] = "femen
 total varones = CALCULATE([Total colaboradores], colaboradores[Género] = "Masculino")
 %mujeres = DIVIDE([total mujeres], [Total colaboradores], 0)
 %varones = DIVIDE([total varones], [Total colaboradores], 0)
+
+![Vista general de los datos](./Capturas/4.porcentaje.png)
+
+medida para hallar el tiempo en el cargo en años: Tiempo en el cargo(años) = DIVIDE(SUM(colaboradores[Total años (puesto)]), [total colaboradores],0)
+
+medida para hallar el porcentaje de insatisfaccion del personal: % personal insatisfecho = DIVIDE([total insatisfechos],[Total colaboradores],0)
+
+Medida para hallar la tasa de ausencia: Tasa Ausencia = [#Total horas ausentismo]/[#total horas planificadas]
+
+![Vista general de los datos](./Capturas/5.tasa%20ausencia.png)
+![Vista general de los datos](./Capturas/6.promedio%20edad.png)
+
+
+luego, se procedio a realizar los graficos que se solicitaron para saber total de colaboradores por departamento, donde se observa que el area de Produccion es el que mas cantidad de colaboradores posee.
+
+![Vista general de los datos](./Capturas/7.colab%20depto.png)
+
+Asimismo, examinamos mediante un grafico de barras horizontales el total de colaboradores segun grupo etareo y pudimos observar que tenemos mayor cantidad de colaboradores cuyas edades estan comprendidas entre 30 y 50 años
+
+![Vista general de los datos](./Capturas/8.colab%20grup%20edad.png)
+
+Tambien , mediante un Gráfico de Treemap pudimos ver la Cantidad de Colaboradores por Supervisor en donde Arthur,Tamara y Julie son los que mas colaboradores tienen a su cargo
+
+![Vista general de los datos](./Capturas/10.colab%20supervisor.png)
+
+
+Entonces, para visualizar el analisis de los indicadores por Departamento se utilizo una matriz
+
+![Vista general de los datos](./Capturas/9.analisis%20depto.png)
+
+Finalmente para ver la relacion entre el sueldo y la edad de los colaboradores hicimos un grafico de dispersion
+
+![Vista general de los datos](./Capturas/11.relacion%20sueldo.png)
+
 
 (.)
